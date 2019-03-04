@@ -36,10 +36,14 @@ namespace ACM.BL
             //5. Email Notifications
             if (emailReceipt)
             {
-                customer.ValidateEmail();
-                customerRepository.Update();
+                var isValidEmail = customer.ValidateEmail();
 
-                Email.Send(customer.EmailAddress, "Order Sent");
+                if (isValidEmail)
+                {
+                    customerRepository.Update();
+
+                    Email.Send(customer.EmailAddress, "Order Sent");
+                }
             }
         }
     }

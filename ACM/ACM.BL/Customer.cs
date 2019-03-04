@@ -1,4 +1,6 @@
 ﻿using System;
+using ACM.Common;
+
 namespace ACM.BL
 {
     public class Customer
@@ -8,9 +10,15 @@ namespace ACM.BL
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public void ValidateEmail()
+        public OperationResult ValidateEmail()
         {
-            throw new NotImplementedException();
+            var result = new OperationResult
+            {
+                Success = true
+            };
+            result.Add("Email Successfull");
+
+            return result;
         }
     }
 }
