@@ -18,3 +18,9 @@ The basic goals of Clean Coding :
 - To tell the difference between **Good Code** vs **Bad Code**.
 - Write Good Code following Clean coding techniques.
 - Transform Bad code into Good Code through Reactoring.
+
+### Automated Code Test
+- Automated Code Tests are *Structured* with 3 A's: **Arrange**, **Act**, **Asset**.
+- Self Documented
+- Automated Code Tests are **Automatic** and **Repeatable**
+- TARDIS : Test Across Time in Space.
